@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkgithub_website=globalThis.webpackChunkgithub_website||[]).push([[121],{8070(e){e.exports=JSON.parse('{"tags":[{"label":"welcome","permalink":"/blog/tags/welcome","count":1},{"label":"backend","permalink":"/blog/tags/backend","count":1},{"label":"software-engineering","permalink":"/blog/tags/software-engineering","count":1}]}')}}]);

@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://cyashu99.github.io/github-website/blog</id>
+    <id>https://cyashu99.github.io/blog</id>
     <title>Yashika Chaudhary Blog</title>
     <updated>2026-02-09T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://cyashu99.github.io/github-website/blog"/>
+    <link rel="alternate" href="https://cyashu99.github.io/blog"/>
     <subtitle>Yashika Chaudhary Blog</subtitle>
-    <icon>https://cyashu99.github.io/github-website/img/favicon.ico</icon>
+    <icon>https://cyashu99.github.io/img/favicon.ico</icon>
     <entry>
         <title type="html"><![CDATA[Welcome]]></title>
-        <id>https://cyashu99.github.io/github-website/blog/welcome</id>
-        <link href="https://cyashu99.github.io/github-website/blog/welcome"/>
+        <id>https://cyashu99.github.io/blog/welcome</id>
+        <link href="https://cyashu99.github.io/blog/welcome"/>
         <updated>2026-02-09T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Welcome to my personal website!]]></summary>
         <content type="html"><![CDATA[<p>Welcome to my personal website!</p>
