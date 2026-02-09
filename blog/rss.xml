@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>Yashika Chaudhary Blog</title>
+        <link>https://cyashu99.github.io/github-website/blog</link>
+        <description>Yashika Chaudhary Blog</description>
+        <lastBuildDate>Mon, 09 Feb 2026 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <item>
+            <title><![CDATA[Welcome]]></title>
+            <link>https://cyashu99.github.io/github-website/blog/welcome</link>
+            <guid>https://cyashu99.github.io/github-website/blog/welcome</guid>
+            <pubDate>Mon, 09 Feb 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[Welcome to my personal website!]]></description>
+            <content:encoded><![CDATA[<p>Welcome to my personal website!</p>
+<p>I'm <strong>Yashika Chaudhary</strong>, a Senior Software Engineer at WEX India, specializing in backend development. This site serves as a space to share my thoughts, experiences, and technical insights.</p>
+<p>Feel free to explore the documentation section to learn more about my work and projects.</p>]]></content:encoded>
+            <category>welcome</category>
+            <category>backend</category>
+            <category>software-engineering</category>
+        </item>
+    </channel>
+</rss>
