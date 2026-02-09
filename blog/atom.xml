@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://cyashu99.github.io/blog</id>
+    <title>Yashika Chaudhary Blog</title>
+    <updated>2026-02-09T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://cyashu99.github.io/blog"/>
+    <subtitle>Yashika Chaudhary Blog</subtitle>
+    <icon>https://cyashu99.github.io/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Productionizing AI-Powered Systems at Scale]]></title>
+        <id>https://cyashu99.github.io/blog/ai-powered-systems-production</id>
+        <link href="https://cyashu99.github.io/blog/ai-powered-systems-production"/>
+        <updated>2026-02-09T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Integrating AI capabilities like GPT-4o into production systems presents unique challenges. In this post, I'll share insights from building an AI-powered dashboard summarization system that processes diverse data sources and delivers real-time insights.]]></summary>
+        <content type="html"><![CDATA[<p>Integrating AI capabilities like GPT-4o into production systems presents unique challenges. In this post, I'll share insights from building an AI-powered dashboard summarization system that processes diverse data sources and delivers real-time insights.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-challenge">The Challenge<a href="https://cyashu99.github.io/blog/ai-powered-systems-production#the-challenge" class="hash-link" aria-label="Direct link to The Challenge" title="Direct link to The Challenge" translate="no">​</a></h2>
+<p>Building AI-powered systems requires addressing:</p>
+<ul>
+<li class=""><strong>Latency</strong>: AI API calls can be slow and unpredictable</li>
+<li class=""><strong>Cost</strong>: Managing API costs at scale</li>
+<li class=""><strong>Reliability</strong>: Handling API failures and rate limits</li>
+<li class=""><strong>Data Quality</strong>: Ensuring clean, preprocessed inputs</li>
+<li class=""><strong>Scalability</strong>: Processing high volumes efficiently</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="architecture-approach">Architecture Approach<a href="https://cyashu99.github.io/blog/ai-powered-systems-production#architecture-approach" class="hash-link" aria-label="Direct link to Architecture Approach" title="Direct link to Architecture Approach" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="distributed-system-design">Distributed System Design<a href="https://cyashu99.github.io/blog/ai-powered-systems-production#distributed-system-design" class="hash-link" aria-label="Direct link to Distributed System Design" title="Direct link to Distributed System Design" translate="no">​</a></h3>
+<p>The system leverages distributed patterns:</p>
+<ul>
+<li class=""><strong>Microservices</strong>: Separate services for data collection, preprocessing, and AI processing</li>
+<li class=""><strong>Message Queues</strong>: Kafka for reliable event processing</li>
+<li class=""><strong>Caching</strong>: Redis for frequently accessed data</li>
+<li class=""><strong>Load Balancing</strong>: Distributing requests across multiple instances</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="data-pipeline">Data Pipeline<a href="https://cyashu99.github.io/blog/ai-powered-systems-production#data-pipeline" class="hash-link" aria-label="Direct link to Data Pipeline" title="Direct link to Data Pipeline" translate="no">​</a></h3>
+<p>A robust data pipeline ensures:</p>
+<ol>
+<li class=""><strong>Collection</strong>: Aggregating data from multiple sources</li>
+<li class=""><strong>Preprocessing</strong>: Cleaning and normalizing data</li>
+<li class=""><strong>Enrichment</strong>: Adding context and metadata</li>
+<li class=""><strong>AI Processing</strong>: Sending to GPT-4o with proper error handling</li>
+<li class=""><strong>Delivery</strong>: Caching and serving results efficiently</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="reliability-patterns">Reliability Patterns<a href="https://cyashu99.github.io/blog/ai-powered-systems-production#reliability-patterns" class="hash-link" aria-label="Direct link to Reliability Patterns" title="Direct link to Reliability Patterns" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Retry Logic</strong>: Exponential backoff for transient failures</li>
+<li class=""><strong>Circuit Breakers</strong>: Preventing cascade failures</li>
+<li class=""><strong>Fallback Mechanisms</strong>: Graceful degradation when AI is unavailable</li>
+<li class=""><strong>Rate Limiting</strong>: Managing API quotas effectively</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="key-learnings">Key Learnings<a href="https://cyashu99.github.io/blog/ai-powered-systems-production#key-learnings" class="hash-link" aria-label="Direct link to Key Learnings" title="Direct link to Key Learnings" translate="no">​</a></h2>
+<ol>
+<li class=""><strong>Caching is Essential</strong>: Cache AI responses to reduce costs and latency</li>
+<li class=""><strong>Preprocessing Matters</strong>: Clean, structured inputs improve AI output quality</li>
+<li class=""><strong>Monitor Everything</strong>: Track latency, costs, and error rates</li>
+<li class=""><strong>Design for Failure</strong>: AI APIs can fail; systems must handle it gracefully</li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="results">Results<a href="https://cyashu99.github.io/blog/ai-powered-systems-production#results" class="hash-link" aria-label="Direct link to Results" title="Direct link to Results" translate="no">​</a></h2>
+<ul>
+<li class=""><strong>Real-time Insights</strong>: Delivered actionable dashboards in seconds</li>
+<li class=""><strong>Cost Optimization</strong>: Intelligent caching reduced API calls by 60%</li>
+<li class=""><strong>High Reliability</strong>: 99.9% uptime despite external API dependencies</li>
+<li class=""><strong>Scalability</strong>: Handled 10x traffic increase without issues</li>
+</ul>
+<hr>
+<p><em>Productionizing AI systems requires the same rigor as any distributed system: proper architecture, comprehensive monitoring, and designing for failure. The AI component is just one part of a larger, reliable system.</em></p>]]></content>
+        <author>
+            <name>Yashika Chaudhary</name>
+            <uri>https://github.com/yashika-chaudhary1999</uri>
+        </author>
+        <category label="ai" term="ai"/>
+        <category label="machine-learning" term="machine-learning"/>
+        <category label="distributed-systems" term="distributed-systems"/>
+        <category label="production" term="production"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Building Resilient Enterprise Integrations]]></title>
+        <id>https://cyashu99.github.io/blog/building-resilient-integrations</id>
+        <link href="https://cyashu99.github.io/blog/building-resilient-integrations"/>
+        <updated>2026-02-09T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Building enterprise integrations that connect major CRM platforms like Salesforce, Zendesk, and Dynamics 365 requires careful attention to reliability, scalability, and fault tolerance. In this post, I'll share insights from designing and implementing resilient integration solutions.]]></summary>
+        <content type="html"><![CDATA[<p>Building enterprise integrations that connect major CRM platforms like Salesforce, Zendesk, and Dynamics 365 requires careful attention to reliability, scalability, and fault tolerance. In this post, I'll share insights from designing and implementing resilient integration solutions.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-challenge">The Challenge<a href="https://cyashu99.github.io/blog/building-resilient-integrations#the-challenge" class="hash-link" aria-label="Direct link to The Challenge" title="Direct link to The Challenge" translate="no">​</a></h2>
+<p>Enterprise integrations face unique challenges:</p>
+<ul>
+<li class=""><strong>High Volume</strong>: Processing millions of events daily</li>
+<li class=""><strong>SLA Requirements</strong>: Ensuring 99.9%+ uptime</li>
+<li class=""><strong>Fault Tolerance</strong>: Handling failures gracefully without data loss</li>
+<li class=""><strong>Real-time Sync</strong>: Maintaining data consistency across platforms</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="architecture-patterns">Architecture Patterns<a href="https://cyashu99.github.io/blog/building-resilient-integrations#architecture-patterns" class="hash-link" aria-label="Direct link to Architecture Patterns" title="Direct link to Architecture Patterns" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="event-driven-architecture">Event-Driven Architecture<a href="https://cyashu99.github.io/blog/building-resilient-integrations#event-driven-architecture" class="hash-link" aria-label="Direct link to Event-Driven Architecture" title="Direct link to Event-Driven Architecture" translate="no">​</a></h3>
+<p>Using Apache Kafka as the backbone for event-driven patterns provides:</p>
+<ul>
+<li class=""><strong>Decoupling</strong>: Services communicate through events, not direct calls</li>
+<li class=""><strong>Scalability</strong>: Horizontal scaling of consumers</li>
+<li class=""><strong>Reliability</strong>: Message persistence and replay capabilities</li>
+<li class=""><strong>Observability</strong>: Built-in monitoring and tracing</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="grpc-for-inter-service-communication">gRPC for Inter-Service Communication<a href="https://cyashu99.github.io/blog/building-resilient-integrations#grpc-for-inter-service-communication" class="hash-link" aria-label="Direct link to gRPC for Inter-Service Communication" title="Direct link to gRPC for Inter-Service Communication" translate="no">​</a></h3>
+<p>gRPC offers several advantages over traditional REST:</p>
+<ul>
+<li class=""><strong>Performance</strong>: HTTP/2 multiplexing and binary protocol</li>
+<li class=""><strong>Type Safety</strong>: Strong typing with Protocol Buffers</li>
+<li class=""><strong>Streaming</strong>: Bidirectional streaming for real-time updates</li>
+<li class=""><strong>Efficiency</strong>: Lower latency and bandwidth usage</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="failure-notification-pipeline">Failure Notification Pipeline<a href="https://cyashu99.github.io/blog/building-resilient-integrations#failure-notification-pipeline" class="hash-link" aria-label="Direct link to Failure Notification Pipeline" title="Direct link to Failure Notification Pipeline" translate="no">​</a></h3>
+<p>A Kafka-driven failure notification pipeline ensures:</p>
+<ul>
+<li class=""><strong>Visibility</strong>: Real-time alerts for integration failures</li>
+<li class=""><strong>Traceability</strong>: Complete audit trail of events</li>
+<li class=""><strong>Recovery</strong>: Automatic retry mechanisms</li>
+<li class=""><strong>Customer Transparency</strong>: Status updates and error reporting</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="key-learnings">Key Learnings<a href="https://cyashu99.github.io/blog/building-resilient-integrations#key-learnings" class="hash-link" aria-label="Direct link to Key Learnings" title="Direct link to Key Learnings" translate="no">​</a></h2>
+<ol>
+<li class=""><strong>Idempotency is Critical</strong>: Design operations to be safely retryable</li>
+<li class=""><strong>Observability First</strong>: Comprehensive logging, tracing, and metrics</li>
+<li class=""><strong>Graceful Degradation</strong>: Systems should degrade gracefully under load</li>
+<li class=""><strong>Testing at Scale</strong>: Load testing with production-like volumes</li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="results">Results<a href="https://cyashu99.github.io/blog/building-resilient-integrations#results" class="hash-link" aria-label="Direct link to Results" title="Direct link to Results" translate="no">​</a></h2>
+<ul>
+<li class=""><strong>50% Resource Reduction</strong>: Consolidated architecture reduced resource usage</li>
+<li class=""><strong>80% Efficiency Improvement</strong>: Payload diffing eliminated redundant processing</li>
+<li class=""><strong>High Availability</strong>: Multiple go-lives with zero downtime</li>
+<li class=""><strong>Improved Developer Experience</strong>: Faster onboarding and easier maintenance</li>
+</ul>
+<hr>
+<p><em>Building resilient integrations requires a combination of solid architecture patterns, comprehensive testing, and continuous monitoring. The key is designing for failure from the start.</em></p>]]></content>
+        <author>
+            <name>Yashika Chaudhary</name>
+            <uri>https://github.com/yashika-chaudhary1999</uri>
+        </author>
+        <category label="microservices" term="microservices"/>
+        <category label="integrations" term="integrations"/>
+        <category label="architecture" term="architecture"/>
+        <category label="resilience" term="resilience"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Welcome to My Website]]></title>
+        <id>https://cyashu99.github.io/blog/welcome</id>
+        <link href="https://cyashu99.github.io/blog/welcome"/>
+        <updated>2026-02-09T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Welcome to my personal website!]]></summary>
+        <content type="html"><![CDATA[<p>Welcome to my personal website!</p>
+<p>I'm <strong>Yashika Chaudhary</strong>, a Senior Product Engineer specializing in Distributed Systems, currently working at Sprinklr. I'm passionate about building scalable, resilient systems that power enterprise-level applications.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="what-youll-find-here">What You'll Find Here<a href="https://cyashu99.github.io/blog/welcome#what-youll-find-here" class="hash-link" aria-label="Direct link to What You'll Find Here" title="Direct link to What You'll Find Here" translate="no">​</a></h2>
+<p>This website serves as a comprehensive portfolio of my work, experiences, and technical insights. You'll find:</p>
+<ul>
+<li class=""><strong>Professional Background</strong>: My journey from IIT BHU to leading integration projects at Sprinklr</li>
+<li class=""><strong>Technical Projects</strong>: Deep dives into enterprise integrations, webhook architectures, and AI-powered systems</li>
+<li class=""><strong>Skills &amp; Expertise</strong>: Detailed breakdown of my technical competencies</li>
+<li class=""><strong>Blog Posts</strong>: Articles on software engineering, system design, and best practices</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="my-focus-areas">My Focus Areas<a href="https://cyashu99.github.io/blog/welcome#my-focus-areas" class="hash-link" aria-label="Direct link to My Focus Areas" title="Direct link to My Focus Areas" translate="no">​</a></h2>
+<ul>
+<li class=""><strong>Distributed Systems</strong>: Designing fault-tolerant microservices architectures</li>
+<li class=""><strong>Enterprise Integrations</strong>: Building seamless connections between major CRM platforms</li>
+<li class=""><strong>Cloud Infrastructure</strong>: Deploying scalable solutions on AWS with Kubernetes</li>
+<li class=""><strong>AI/ML Applications</strong>: Integrating AI capabilities into production systems</li>
+</ul>
+<p>Feel free to explore the documentation section to learn more about my work and projects. I'm always open to connecting with fellow engineers and discussing interesting technical challenges!</p>
+<hr>
+<p><em>Stay tuned for more articles on distributed systems, microservices architecture, and software engineering best practices.</em></p>]]></content>
+        <author>
+            <name>Yashika Chaudhary</name>
+            <uri>https://github.com/yashika-chaudhary1999</uri>
+        </author>
+        <category label="welcome" term="welcome"/>
+        <category label="introduction" term="introduction"/>
+        <category label="software-engineering" term="software-engineering"/>
+    </entry>
+</feed>

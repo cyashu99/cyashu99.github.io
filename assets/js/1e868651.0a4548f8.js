@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkgithub_website=globalThis.webpackChunkgithub_website||[]).push([[683],{7807(e){e.exports=JSON.parse('{"metadata":{"permalink":"/github-website/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

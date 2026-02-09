@@ -1,6 +1,6 @@
 # Yashika Chaudhary - Personal Website
 
-A Docusaurus 3.9 site for Yashika Chaudhary, Senior Software Engineer at WEX India, configured for GitHub Pages deployment.
+A Docusaurus 3.9 site for Yashika Chaudhary, Senior Product Engineer at Sprinklr, configured for GitHub Pages deployment.
 
 ## Getting Started
 
@@ -42,22 +42,18 @@ npm run serve
 ### Configuration
 
 The site is already configured for GitHub Pages deployment with:
-- **URL**: `https://yashika.github.io`
-- **Base URL**: `/github-website/`
-- **Organization**: `yashika`
-- **Project Name**: `github-website`
-
-**Note**: If your GitHub username is different from `yashika`, please update the `url` and `organizationName` fields in `docusaurus.config.js`.
+- **URL**: `https://cyashu99.github.io`
+- **Base URL**: `/`
+- **Organization**: `cyashu99`
+- **Project Name**: `cyashu99.github.io`
 
 ### Deployment Steps
 
 1. Push your code to GitHub:
 ```bash
 git add .
-git commit -m "Initial Docusaurus setup"
-git branch -M main
-git remote add origin https://github.com/yashika/github-website.git
-git push -u origin main
+git commit -m "Update site"
+git push origin main
 ```
 
 2. Enable GitHub Pages:
@@ -66,7 +62,7 @@ git push -u origin main
    - The workflow will automatically deploy on every push to `main`
 
 3. Your site will be available at:
-   `https://yashika.github.io/github-website/`
+   `https://cyashu99.github.io/`
 
 ## Project Structure
 
